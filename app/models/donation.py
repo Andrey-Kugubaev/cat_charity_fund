@@ -4,6 +4,7 @@ from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, Text
 
 from app.core.db import Base
 
+
 class Donation(Base):
     user_id = Column(Integer, ForeignKey('user.id'))
     comment = Column(Text)
