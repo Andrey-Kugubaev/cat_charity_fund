@@ -5,7 +5,7 @@
 #    pipenv lock --requirements
 #
 
-#-i https://pypi.org/simple
+-i https://pypi.org/simple
 aiosqlite==0.17.0
 alembic==1.7.7
 anyio==3.6.1
