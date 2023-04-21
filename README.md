@@ -1,5 +1,6 @@
 # Проект QRKot
 ## _Приложение для Благотворительного фонда поддержки котиков_
+
 ![Python](https://img.shields.io/badge/Python-3.10.4-green)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.78.0-green)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-1.4.36-green)
