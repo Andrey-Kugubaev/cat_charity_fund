@@ -59,13 +59,15 @@ async def update_charity_project(
         project_in: CharityProjectUpdate,
         session: AsyncSession = Depends(get_async_session),
 ):
-    await check_update_project_invested(project_id, session)
     charity_project = await check_charity_project_exists(
         project_id, session
     )
     if project_in.name is not None:
         await check_name_duplicate(project_in.name, session)
     await check_update_project_closed(project_id, session)
+    await check_update_project_invested(
+        charity_project, project_in.full_amount
+    )
     charity_project = await charity_project_crud.update(
         charity_project, project_in, session
     )

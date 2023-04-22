@@ -89,16 +89,14 @@ async def check_update_project_closed(
 
 
 async def check_update_project_invested(
-        project_id: int,
-        session: AsyncSession,
+        project,
+        new_full_amount,
 ):
-    charity_project = await charity_project_crud.get(
-        object_id=project_id, session=session
-    )
-    if charity_project.full_amount < charity_project.invested_amount:
-        raise HTTPException(
-            status_code=422,
-            detail='При редактировании проекта нельзя '
-                   'устанавливать требуемую сумму меньше внесённой.'
-        )
-    return charity_project
+    if new_full_amount:
+        if new_full_amount < project.invested_amount:
+            raise HTTPException(
+                status_code=422,
+                detail='При редактировании проекта нельзя '
+                       'устанавливать требуемую сумму меньше внесённой.'
+            )
+    return project

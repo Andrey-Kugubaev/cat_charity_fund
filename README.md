@@ -59,7 +59,7 @@ _Для Linux/macOS_<br>
 `python3 -m pip install --upgrade pip` <br>
  `pip install -r requirements.txt` <br>
 4. Применить миграции:<br>
-`alembic upgrade head`
+`alembic upgrade head`<br>
 5. Запусить проект:<br>
 `uvicorn app.main:app --reload`
 
@@ -71,6 +71,6 @@ _Для Windows_<br>
 `python -m pip install --upgrade pip` <br>
 `pip install -r requirements.txt` <br>
 4. Применить миграции:<br>
-`alembic upgrade head`
+`alembic upgrade head`<br>
 5. Запусить проект:<br>
 `uvicorn app.main:app --reload`
