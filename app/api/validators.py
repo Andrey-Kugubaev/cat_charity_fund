@@ -98,7 +98,7 @@ async def check_update_project_invested(
     if charity_project.full_amount < charity_project.invested_amount:
         raise HTTPException(
             status_code=422,
-            detail='При редактировании проекта должно быть запрещено '
+            detail='При редактировании проекта нельзя '
                    'устанавливать требуемую сумму меньше внесённой.'
         )
     return charity_project
