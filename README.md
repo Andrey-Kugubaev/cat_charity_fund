@@ -49,12 +49,12 @@ API разделены на группы: _проекты_, _пожертвов�
 
 1. Клонировать репозиторий:<br>
 `git clone git@github.com:Andrey-Kugubaev/cat_charity_fund.git`<br>
-и перейти в директорию проекта `cat_charity_fund`
+и перейти в директорию проекта `cat_charity_fund`<br>
 
-_Для Linux/macOS_
+_Для Linux/macOS_<br>
 2. Создать и активировать вирутально окружение: <br>
 `python3 -m venv venv` <br>
-`source venv/bin/activate`
+`source venv/bin/activate`<br>
 3. Установить зависимости из файла requirements.txt: <br>
 `python3 -m pip install --upgrade pip` <br>
  `pip install -r requirements.txt` <br>
@@ -63,7 +63,7 @@ _Для Linux/macOS_
 5. Запусить проект:<br>
 `uvicorn app.main:app --reload`
 
-_Для Windows_
+_Для Windows_<br>
 2. Создать и активировать вирутально окружение: <br>
 `python -m venv venv` <br>
 `source venv/scripts/activate` <br>
