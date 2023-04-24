@@ -19,7 +19,7 @@ class CRUDCharityProject(CRUDBase):
                 CharityProject.name == project_name
             )
         )
-        db_project_id = db_project_id.scalars().first()
+        db_project_id = db_project_id.scalar()
         return db_project_id
 
     async def get_not_used(

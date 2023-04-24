@@ -3,10 +3,10 @@ from pydantic import BaseSettings, EmailStr
 
 
 class Settings(BaseSettings):
-    app_title: str = 'Donation service'
-    description: str = 'Donation service for cats'
+    app_title: str = 'APP_TITLE'
+    description: str = 'DESCRIPTION'
     database_url: str = 'sqlite+aiosqlite:///./fastapi.db'
-    secret: str = 'UgFdnvDcSD'
+    secret: str = 'SECRET'
     first_superuser_email: Optional[EmailStr] = None
     first_superuser_password: Optional[str] = None
 
